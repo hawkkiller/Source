@@ -71,7 +71,7 @@ function js(done) {
 }
 
 function zipper(done) {
-    const filename = require('./package.json').name + '.zip';
+    const filename = require('./package.json').name + '.updated.zip';
 
     pump([
         src([
