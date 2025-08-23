@@ -1,5 +1,6 @@
 {{!-- Sans-serif font is always loaded, because it's the default font for some part of the theme regardless of the settings --}}
 {{> "typography/sans"}}
+{{> "typography/mono"}}
 
 {{#match @custom.title_font "Modern sans-serif"}}
     {{#match @custom.body_font "Elegant serif"}}
@@ -8,7 +9,6 @@
 {{else match @custom.title_font "Elegant serif"}}
     {{> "typography/serif"}}
 {{else}}
-    {{> "typography/mono"}}
     {{#match @custom.body_font "Elegant serif"}}
         {{> "typography/serif"}}
     {{/match}}

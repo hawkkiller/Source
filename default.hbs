@@ -11,6 +11,7 @@
     <link rel="preload" as="style" href="{{asset "built/screen.css"}}">
     <link rel="preload" as="script" href="{{asset "built/source.js"}}">
     
+    
     {{!-- Fonts are preloaded and defined in the default template to avoid layout shift --}}
     {{> "typography/fonts"}}
 
@@ -42,6 +43,8 @@
 
         document.documentElement.className = `has-${textColor}-text`;
     </script>
+
+    {{> "prismjs-theme/header" }}
 
     {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings, it should always be the last tag before the closing head tag --}}
     {{ghost_head}}
