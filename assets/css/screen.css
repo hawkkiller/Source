@@ -62,8 +62,8 @@ production stylesheet in assets/built/screen.css
     --color-secondary-text: rgb(0 0 0 / 0.55);
     --color-border: rgb(0 0 0 / 0.08);
     --color-dark-border: rgb(0 0 0 / 0.55);
-    --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --font-serif: "EB Garamond", Georgia, Times, serif;
+    --font-sans: "Ubuntu Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-serif: "Lora", Georgia, Times, serif;
     --font-serif-alt: Georgia, Times, serif;
     --font-mono: "JetBrains Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
     --container-width: 1320px;
@@ -2623,7 +2623,7 @@ figcaption a {
 
 .has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) :is(.is-title, .gh-content :is(h2, h3)) {
     font-family: var(--gh-font-heading, var(--font-serif));
-    font-weight: 550;
+    font-weight: 500;
 }
 
 .has-mono-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) :is(.is-title, .gh-content :is(h2, h3)) {
@@ -3396,8 +3396,8 @@ div.code-toolbar>.toolbar {
 div.code-toolbar>.toolbar>.toolbar-item>button.copy-to-clipboard-button {
     display: inline-flex;
     padding: 0 .75em;
-    font-size: var(--font-mono, .8em);
-    font-family: var(--am-prism-font-family, ui-monospace), monospace;
+    font-size: .8em;
+    font-family: var(--font-sans, ui-monospace), monospace;
     font-weight: 600 !important;
     line-height: 2.25em;
     color: var(--am-prism-copy-color);
