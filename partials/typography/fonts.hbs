@@ -2,14 +2,15 @@
 {{> "typography/sans"}}
 {{> "typography/mono"}}
 
-{{#match @custom.title_font "Modern sans-serif"}}
-    {{#match @custom.body_font "Elegant serif"}}
+{{#match @custom.theme_title_font "Modern sans-serif"}}
+    {{#match @custom.theme_body_font "Elegant serif"}}
         {{> "typography/serif"}}
     {{/match}}
-{{else match @custom.title_font "Elegant serif"}}
+{{else match @custom.theme_title_font "Elegant serif"}}
     {{> "typography/serif"}}
 {{else}}
-    {{#match @custom.body_font "Elegant serif"}}
+    {{> "typography/mono"}}
+    {{#match @custom.theme_body_font "Elegant serif"}}
         {{> "typography/serif"}}
     {{/match}}
 {{/match}}
